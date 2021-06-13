@@ -1,0 +1,25 @@
+<!-- Product 1 -->
+<div class="col-sm-6 col-md-3">
+    <div class="thumbnail featured-product">
+        <a href="#">
+            <ng-content select=".img"></ng-content>
+        </a>
+        <div class="caption" #proval>
+            <!-- <ng-content select=".title" #titles></ng-content> -->
+            <h3 class="title">Seamless Strategic</h3>
+            <p #desc>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
+            <!-- <ng-content select=".price" #price></ng-content> -->
+            <p class="price">$11.50</p>
+            <!-- Input Group -->
+            <div class="input-group">
+                <input type="number" class="form-control" value="1" #item>
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button" (click)="getProduct(this)">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 
+                        Add to Cart
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

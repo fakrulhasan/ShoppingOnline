@@ -1,0 +1,12 @@
+
+<div class="col-sm-offset-2 col-sm-8">
+    <br/><br/> 
+    <button class="btn btn-primary" (click)="goHome()">Back</button>
+<table class="table table-borderd">
+        <thead><tr><th>Qty</th><th>Title</th><th>Price</th></tr></thead>
+        <tbody><tr *ngFor="let user of recvdata;"><td>{{user.qty}}</td><td>{{user.title}}</td><td>{{user.price}}</td></tr>
+        <tr><td *ngIf="!recvdata"><button class="btn btn-primary" (click)="showProductList()">CheckOut</button></td></tr>
+        <tr><td colspan="2"><b>Total:</b></td><td><b>{{user.price}}</b></td></tr>
+        </tbody>
+    </table>
+</div>

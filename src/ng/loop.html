@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="" src="angular.js"></script>
+    <script>
+    // for(var i = 3; i>0; i--){ 
+    //     for(var j = 1; j<=i; j++){
+    //         document.write("*");
+    //     }
+    //     document.write("<br/>");
+    // }
+// var abc = [0,0,1,1,2,3,4,5,7,7,7,8,8,8,8,8 ];
+// document.write("<br/>"+abc);
+// (function removeDuplicacy(){
+//     var lng = abc.length;
+//     for(var i=0; i<lng; i++){
+//         for(var j=i+1; j<=lng; j++){
+//             if(abc[i]==abc[j]){
+//                // debugger;
+//                 abc.splice(i,1);
+//                 removeDuplicacy();
+//             }
+//         }
+//     }
+// })();
+//removeDuplicacy();
+
+    //document.write("<br/>"+abc);
+
+
+//// Interview 14 December [2,3,4,5,6] add all Sum index +1
+
+
+var abc = [2,3,4,5,6];
+
+//abc.forEach(myfunction);
+// document.write('<br/>'+abc)
+// for(var i=0; i<abc.length; i++){
+//     for(var j=i+1;j<abc.length; j++){
+//         abc[i]+=abc[j];
+//     }
+// }
+// document.write('<br/>'+abc);
+//before loop [2,3,4,5,6]
+// after loop [20,18,15,11,6]
+
+// var myarrayobj = [{a:'hello'},{a:'in'},{a:'Delhi'},{a:'here'}];
+
+// var myval1 = myarrayobj.map((myval,index)=> {
+//     if(myval.a == 'Delhi'){
+//         alert(index+'Found the data');
+//     }
+//    return myval.a;
+   
+//    })         
+// console.log(myval1);
+// for(var i=1; i<=20; i++){
+//     if((i%2)==1){
+//         console.log(i);
+//     }
+// }
+angular.module("myApp",[]).controller("MyController", function($scope, $parse){
+        $scope.$watch('expr', function(newVal,oldVal,scope){
+            if(newVal !== oldVal){
+                    var parseFun = $parse(newVal);
+                    $scope.parsedValue=parseFun(scope);
+            }
+        })
+})
+    </script>
+</head>
+<body>
+    <div ng-controller="MyController">
+        <input ng-module="expr" type="text" placeholder="Enter an expression" />
+        <h2>{{parsedValue}}</h2>
+    </div>
+</body>
+</html>

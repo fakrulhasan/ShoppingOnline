@@ -1,0 +1,88 @@
+
+
+<div class="row">
+
+    <div class="col-sm-6 col-sm-offset-3">
+<main class="my-form">
+    <div class="cotainer">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                    <div class="card">
+                        <br>
+                        <div class="card-header" style="font-size: 16px; font-weight: bold;">Register</div>
+                        <br>
+                        
+                        <div class="card-body">
+                            <form [formGroup]="myReactiveForm" (ngSubmit)="onSubmit()">
+                                <div class="form-group row">
+                                    <label for="full_name" class="col-md-4 col-form-label text-md-right">Full Name</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="full_name" class="form-control" name="full-name" formControlName="fullName">
+                                        <small class="text text-danger" *ngIf="!myReactiveForm.get('fullName').valid && myReactiveForm.get('fullName').touched">
+                                         Please enter first name</small>
+                                    </div>
+                                 
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="email_address" class="form-control" name="email-address" formControlName="email">
+                                        <small class="text text-danger" *ngIf="!myReactiveForm.get('email').valid && myReactiveForm.get('email').touched">
+                                        
+                                            Please enter Email</small>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="user_name" class="col-md-4 col-form-label text-md-right">User Name</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="user_name" class="form-control" name="username" formControlName="userName">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="phone_number" class="col-md-4 col-form-label text-md-right">Phone Number</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="phone_number" class="form-control" formControlName="mobile">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="present_address" class="col-md-4 col-form-label text-md-right">Present Address</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="present_address" class="form-control" formControlName="address">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="permanent_address" class="col-md-4 col-form-label text-md-right">Permanent Address</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="permanent_address" class="form-control" name="permanent-address" formControlName="pAddress">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="nid_number" class="col-md-4 col-form-label text-md-right"><abbr
+                                                title="National Id Card">NID</abbr> Number</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="nid_number" class="form-control" name="nid-number" formControlName="nNumber">
+                                    </div>
+                                </div>
+
+                                    <div class="col-md-6 offset-md-6">
+                                        <button type="submit" class="btn btn-primary">
+                                        Register
+                                        </button>
+                                    </div>
+                        
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+</div>
+</div>

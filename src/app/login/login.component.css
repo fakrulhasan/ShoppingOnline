@@ -1,0 +1,14 @@
+.box{
+    border:#ddd 1px solid;    
+    padding: 20px;
+    border-radius: 10px;
+}
+.w-100{
+    width: 100%;
+    padding: 4px;
+}
+.f40{
+    font-size: 80px;
+    
+}
+.navbar-brand{ width: 100%; height: 120px;    padding-left: 31%;}
