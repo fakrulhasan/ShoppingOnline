@@ -10,7 +10,8 @@ import {ShowhidenavigationService} from '../showhidenavigation.service';
 export class LoginComponent implements OnInit {
 
   constructor(private router: Router, private _Show:ShowhidenavigationService) { }
-
+  uname:any;
+  upass:any;
   ngOnInit() {
 
   }
