@@ -8,7 +8,8 @@ import { ServceAddtocartService } from '../servce-addtocart.service';
   styleUrls: ['./product-list-details.component.css']
 })
 export class ProductListDetailsComponent implements OnInit {
-
+showProductList:any;
+user:any;
   constructor(private _getdata:ServceAddtocartService, private router:Router) { }
   recvdata=[];
   ngOnInit() {
