@@ -21,11 +21,11 @@ import { Product2Component } from './product2/product2.component';
 import { Product3Component } from './product3/product3.component';
 import { Product4Component } from './product4/product4.component';
 import { ServceAddtocartService } from './servce-addtocart.service';
-// import { RformComponent } from './rform/rform.component';
+import { RformComponent } from './rform/rform.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChildCompComponent } from './child-comp/child-comp.component';
 import { ParentCompComponent } from './parent-comp/parent-comp.component';
-// import { ProductListDetailsComponent } from './product-list-details/product-list-details.component';
+import { ProductListDetailsComponent } from './product-list-details/product-list-details.component';
 import {ShowhidenavigationService} from'./showhidenavigation.service';
 import{GetempdataService}from'./getempdata.service';
 import { EmployeeComponent } from './employee/employee.component';
@@ -51,10 +51,10 @@ import{HttpClientModule} from'@angular/common/http';
     Product2Component,
     Product3Component,
     Product4Component,
-    //RformComponent,
+    RformComponent,
     ChildCompComponent,
     ParentCompComponent,
-    //ProductListDetailsComponent,
+    ProductListDetailsComponent,
     EmployeeComponent,
 
   ],
