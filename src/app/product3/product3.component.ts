@@ -20,7 +20,7 @@ export class Product3Component implements OnInit {
   }
 
 prodetail:string;
-getProduct(this:any){
+getProduct(this){
   alert($(this).parent().parent().find('.title').text());
 }
 }
