@@ -8,7 +8,7 @@
 <table class="table table-borderd">
     <thead><tr><th>Employee Id</th><th>Employee Name</th><th>Salary</th><th>Department</th><th>Gender</th><th>Edit</th><th>Delete</th></tr></thead>
     <tbody>
-    <tr *ngFor="let e of emp; trackBy:trackrecord">
+    <tr *ngFor="let e of emp">
         <td>{{e.empid}}</td>
         <td>{{e.name}}</td>
         <td>{{e.salary}}</td>
